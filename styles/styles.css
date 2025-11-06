@@ -1,6 +1,14 @@
+:root {
+    --border: 1px solid black;
+    --padding: 10px;
+    --height: auto;
+    /* Not sure if --img will work */
+    --img: width: 100%; height: auto;
+
+}
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--padding);
 }
 nav a {
     color: white;
@@ -12,8 +20,8 @@ h1 {
 }
 img {
     width: 150px;
-    height: auto;
-    border: 1px solid black;
+    height: var(--height);
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -25,25 +33,25 @@ main {
 }
 main img {
     width: 150px;
-    height: auto;
-    border: 1px solid black;
+    height: var(--height);
+    border: var(--border);
     padding: 1px;
     box-shadow: 0 0 30px gray;
 }
 aside {
     width: 50rem;
     margin: 0;
-    border: 1px solid black;
-    padding: 10px;
+    border: var(--border);
+    padding: var(--padding);
     background-color: gainsboro;
     color: black;
 }
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--height);
 }
 footer {
     margin-top: 2rem;
-    border-top: 1px solid black;
+    border-top: var(--border);
     text-align: center;
 }
