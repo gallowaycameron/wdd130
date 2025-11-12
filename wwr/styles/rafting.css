@@ -32,32 +32,44 @@ nav, p, section, article {
 
 }
 .hero {
-    position: relative;
+  position: relative;
 }
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--accent1-color);
+  opacity: 0.8;
+  color: #fff;
+  z-index: 2;
 }
+
 .hero article {
-    position: absolute;
-    background: var(--accent2-color);
-    color: #fff;
-    padding: 1rem;
+  position: absolute;
+  bottom: 110px;
+  left: 35rem;
+  background: var(--accent2-color);
+  color: #fff;
+  padding: 1rem;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .hero article img {
     float: right;
-    width: 125px;
+    width: 100%;
+    height: auto;
     border: 16px;
     margin: 1px;
+}
+footer .socialmedia img{
+    width: 30px;
+    height: auto;
 }
