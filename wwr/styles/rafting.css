@@ -34,18 +34,12 @@ nav, p, section, article {
 .hero {
     position: relative;
 }
-/* .hero h1 {
-    position: absolute;
-}
-.hero article {
-    position: absolute;
-} */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -55,7 +49,7 @@ h1 {
     background-color: var(--accent1-color);
     color: #fff;
 }
-article {
+.hero article {
     position: absolute;
     background: var(--accent2-color);
     color: #fff;
