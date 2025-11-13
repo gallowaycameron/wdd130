@@ -33,6 +33,7 @@ section h2{
     background-color: var(--accent1-color);
     color: var(--secondary-color);
     width: 100%;
+    padding: .5rem;
 }
 .socialmedia a {
     text-decoration: none;
