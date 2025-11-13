@@ -1,6 +1,6 @@
 :root {
     --primary-color: #2e2e2e;
-    --secondary-color: #3aafa9;
+    --secondary-color: #fff;
     --accent1-color: #0d3b66;
     --accent2-color: #ff6b35;
     --heading-font: 'Bebas Neue', 'Impact', 'Arial Black', Arial, sands-serif;
@@ -18,6 +18,8 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
 }
 h1, h2 {
     font-family: var(--heading-font);
@@ -27,14 +29,17 @@ nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
+section h2{
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    width: 100%;
+}
 .socialmedia a {
     text-decoration: none;
-
 }
 .hero {
   position: relative;
 }
-
 .hero h1 {
   position: absolute;
   top: 20px;
@@ -42,32 +47,28 @@ nav, p, section, article {
   text-align: center;
   background-color: var(--accent1-color);
   opacity: 0.8;
-  color: #fff;
-  z-index: 2;
+  color: var(--secondary-color);
 }
-
-.hero article {
+.hero article{
   position: absolute;
-  bottom: 110px;
-  left: 35rem;
-  background: var(--accent2-color);
-  color: #fff;
-  padding: 1rem;
-  max-width: 300px;
-  border-radius: 5px;
+  width: 100%;
+  top: 60px;
+  background-color: var(--accent2-color);
+  margin-left: auto;
+  opacity: 0.8;
+  color: var(--primary-color);
+  /* display: block; */
 }
-
+.hero article img{
+  float: right;
+  width: 150px;
+  margin-left: 10px;
+  text-align: left;
+}
 .hero img {
   display: block;
   width: 100%;
   height: auto;
-}
-.hero article img {
-    float: right;
-    width: 100%;
-    height: auto;
-    border: 16px;
-    margin: 1px;
 }
 footer .socialmedia img{
     width: 30px;
