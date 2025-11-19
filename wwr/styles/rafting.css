@@ -129,12 +129,12 @@ footer .socialmedia img{
 
 .adventure {
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem;
 }
 
 .fig {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2rem;
     flex-wrap: wrap;
     margin-top: 1.5rem;
@@ -146,14 +146,33 @@ footer .socialmedia img{
 }
 
 .fig img {
+    display: block;
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    display: block;
 }
 
 .fig figcaption {
     margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: #444;
+    color: var(--accent1-color);
+}
+
+.history {
+    padding: 1rem;
+    text-align: center;
+}
+
+.helmets {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.helmets img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
