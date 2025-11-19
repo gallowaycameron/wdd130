@@ -18,7 +18,6 @@ body {
     color: var(--accent1-color);
 }
 header, main, footer {
-    width: 840px;
     margin: 0 auto;
     width: 100%;
     padding: 1rem;
@@ -157,8 +156,8 @@ footer .socialmedia img{
 }
 
 .history {
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .helmets {
