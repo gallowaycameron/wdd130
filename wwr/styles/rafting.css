@@ -29,6 +29,7 @@ header{
   align-items: center;
   justify-content: center;
   max-width: 1000px;
+  background-color: var(--accent1-color);
 }
 
 .links{
@@ -38,6 +39,7 @@ header{
   align-items: center;
   width: 100%;
   height: 100%;
+  background-color: #fff;
   
 }
 
@@ -174,4 +176,32 @@ footer .socialmedia img{
     display: block;
     width: 100%;
     height: auto;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: .5rem;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  padding: 10px;
+  border: 1px solid var(--accent1-color);
+  border-radius: 4px;
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: var(--accent2-color);
+  border: none;
+  color: var(--secondary-color);
+}
+
+form button:hover {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
 }
