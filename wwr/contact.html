@@ -23,42 +23,52 @@
     </header>
     
     <main>
+        <div class="address-div">
         <div class="address">
             <h1>WhiteWater Rafting Co.</h1>
             <p>789 Mountain River Dr.</p>
             <p>Boulder Canyon, CO. 80302</p>
             <p>(303) 555-RAFT</p>
-            <p>info@whitewaterraftcing.com</p>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12222.936237561758!2d-105.29571245962433!3d40.01438753090803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b8d4e278dafd3%3A0xc8393b7ca01b8058!2sBoulder%2C%20CO!5e0!3m2!1sen!2sus!4v1764351309336!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <p>info@whitewaterrafting.com</p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12222.936237561758!2d-105.29571245962433!3d40.01438753090803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b8d4e278dafd3%3A0xc8393b7ca01b8058!2sBoulder%2C%20CO!5e0!3m2!1sen!2sus!4v1764351309336!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <form action="">
-            <div>
+            <div class="form-group">
                 <label for="fullname">Full Name:</label>
                 <input type="text" name="fullname" id="fullname" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="email">E-Mail:</label>
-                <input type="email" name="eamil" id="email" required>
+                <input type="email" name="email" id="email" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="radio">Message Purpose:</label>
-                <input type="radio" name="radio" id="radio" required>General Inquiry
-                <input type="radio" name="radio" id="radio" required>Reservation Question
-                <input type="radio" name="radio" id="radio" required>Website Suggestion
+                <div class="radio-group">
+                    <input type="radio" name="radio" id="general-inquiry" required>
+                    <label for="general-inquiry">General Inquiry</label>
+                    <input type="radio" name="radio" id="reservation-question" required>
+                    <label for="reservation-question">Reservation Question</label>
+                    <input type="radio" name="radio" id="website-suggestion" required>
+                    <label for="website-suggestion">Website Suggestion</label>
+                </div>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="message">Message:</label>
-                <input type="message" name="message" id="message" required>
+                <textarea name="message" id="message" placeholder="Type Here"></textarea>
             </div>
-            <div>
-                <label for="checkbox">Please Subscribe me to the monthly newsletter</label>
+            <div class="form-group">
+                <label for="checkbox">Please Subscribe me to the monthly newsletter:</label>
                 <input type="checkbox" name="checkbox" id="checkbox">
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="submit">Submit Message</button>
         </form>
+    </div>
 
         <section class="adventure">
             <h2>We Are Here to Help</h2>
