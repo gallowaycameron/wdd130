@@ -262,7 +262,7 @@ form button {
     padding: 12px 20px;
     background-color: var(--accent2-color);
     border: none;
-    color: var(--accent1-color);
+    color: var(--primary-color)
 }
 
 form button:hover {
