@@ -30,7 +30,6 @@ header {
   align-items: center;
   justify-content: center;
   width: auto;
-  background-color: var(--accent1-color);
   margin: 0;
 }
 
@@ -46,7 +45,7 @@ header {
 .links a {
   display: flex;
   align-items: center;
-  color: var(--accent3-color);
+  color: var(--primary-color);
   padding: 20px;
   text-decoration: none;
   text-align: center;
