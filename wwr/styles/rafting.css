@@ -15,7 +15,6 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
 }
 
 header, main, footer {
@@ -41,7 +40,6 @@ header {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: var(--accent1-color);
 }
 
 .links a {
