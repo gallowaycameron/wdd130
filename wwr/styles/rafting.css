@@ -19,42 +19,31 @@ body {
 }
 
 header, main, footer {
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
 }
 
 header {
   display: grid;
   grid-template-columns: 2fr 4fr;
   align-items: center;
-  justify-content: center;
-  width: auto;
-  margin: 0;
 }
 
 .links {
   display: flex;
   list-style: none;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
 }
 
 .links a {
-  display: flex;
-  align-items: center;
   color: var(--primary-color);
   padding: 20px;
   text-decoration: none;
-  text-align: center;
-  width: 100%;
-  height: 50px;
-  
+  padding: 1em;
+  font-size: large;
 }
 
-h1, h2 {
+h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -64,11 +53,93 @@ nav, p, section, article {
     padding: 8px;
 }
 
-section h2 {
+img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.adventure {
+    text-align: center;
+    padding: 1rem;
+}
+
+.adventure h2 {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
+    font-family: var(--heading-font);
     width: 100%;
     padding: .5rem;
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+.history h2 {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    width: 100%;
+    padding: .5rem;
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+.fig {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.fig figure {
+    width: 150px;
+    text-align: center;
+}
+
+.fig img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.fig figcaption {
+    margin-top: 0.5rem;
+    color: var(--accent1-color);
+}
+
+
+.help {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    align-items: center;
+}
+
+.help h2 {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    width: 100%;
+    padding: .5rem;
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+.help figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.help img {
+    width: 250px;
+    height: 250px;
 }
 
 .hero {
@@ -113,11 +184,11 @@ section h2 {
     margin: 2px;
 }
 
-footer .socialmedia img{
+.socialmedia img{
     width: 30px;
     height: auto;
 }
-.foot{
+footer {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -128,36 +199,7 @@ footer .socialmedia img{
   background-color: var(--accent1-color);
 }
 
-.adventure {
-    text-align: center;
-    padding: 1rem;
-}
-
-.fig {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-}
-
-.fig figure {
-    width: 150px;
-    text-align: center;
-}
-
-.fig img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.fig figcaption {
-    margin-top: 0.5rem;
-    color: var(--accent1-color);
-}
-
-.history {
+.history h2{
     text-align: center;
     padding: 1rem;
 }
@@ -212,6 +254,13 @@ footer .socialmedia img{
     gap: 20px;
 }
 
+fieldset {
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--accent3-color);
+}
+
 form {
     flex: 1;
     margin-top: 40px;
@@ -232,13 +281,9 @@ input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #000;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     box-sizing: border-box;
-}
-
-textarea {
-    height: 100px;
 }
 
 .radio-group {
