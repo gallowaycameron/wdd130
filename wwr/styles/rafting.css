@@ -37,7 +37,6 @@ header {
 
 .links a {
   color: var(--primary-color);
-  padding: 20px;
   text-decoration: none;
   padding: 1em;
   font-size: large;
@@ -77,6 +76,7 @@ figcaption {
 }
 
 .history h2 {
+    text-align: center;
     background-color: var(--accent1-color);
     color: var(--secondary-color);
     font-family: var(--heading-font);
@@ -197,11 +197,6 @@ footer {
   height: 100%;
   color: var(--accent3-color);
   background-color: var(--accent1-color);
-}
-
-.history h2{
-    text-align: center;
-    padding: 1rem;
 }
 
 .helmets {
