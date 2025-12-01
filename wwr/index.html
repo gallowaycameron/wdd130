@@ -23,67 +23,49 @@
     </header>
     
     <main>
-        <div class="address">
-            <h1>WhiteWater Rafting Co.</h1>
-            <p>789 Mountain River Dr.</p>
-            <p>Boulder Canyon, CO. 80302</p>
-            <p>(303) 555-RAFT</p>
-            <p>info@whitewaterrafting.com</p>
-        </div>
-
-    <div class="contact">
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12222.936237561758!2d-105.29571245962433!3d40.01438753090803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b8d4e278dafd3%3A0xc8393b7ca01b8058!2sBoulder%2C%20CO!5e0!3m2!1sen!2sus!4v1764351309336!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <form action="#">
-            <fieldset>
-                <label for="fullname">Full Name:</label>
-                <input type="text" name="fullname" id="fullname">
-
-                <label for="email">E-Mail:</label>
-                <input type="email" name="email" id="email">
-
-                <label>Message Purpose:</label>
-                <div class="radio-group">
-                    <input type="radio" name="radio" id="general-inquiry">
-                    <label for="general-inquiry">General Inquiry</label>
-                    <input type="radio" name="radio" id="reservation-question">
-                    <label for="reservation-question">Reservation Question</label>
-                    <input type="radio" name="radio" id="website-suggestion">
-                    <label for="website-suggestion">Website Suggestion</label>
-                </div>
-
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" placeholder="Type Here" rows="5" cols="20"></textarea>
-
-                <label for="checkbox">
-                    <input type="checkbox" name="checkbox" id="checkbox">
-                    Please subscribe me to the monthly newsletter:
-                </label>
-            </fieldset>
-            
-            <button type="submit" class="submit">Send Message</button>
-        </form>
-    </div>
-
-        <section class="help">
-            <h2>We Are Here to Help</h2>
-                <figure>
-                    <img src="images/ethan.jpg" alt="A black-and-white photo of a man holding a post in nature">
-                    <figcaption>Ethan Caldwell:<br>Rafting Safety Coordinator</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/lucas.jpg" alt="A sepia-toned photo of a man smiling outdoors">
-                    <figcaption>Lucas Grant:<br>Guest Services Manager</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/oliver.jpg" alt="A picture of a man wearing a hard hat and gripping an edge with one hand">
-                    <figcaption>Oliver Hayes:<br>Lead River Guid</figcaption>
-                </figure>
+        <section class="hero">
+            <img src="images/hero_main.jpg" alt="A group of four people with oars traversing a white-water river rapid">
+            <h1>Adventure Starts Here</h1>
         </section>
 
+        <section class="newsletter">
+            <h1>Sign up for our newsletter!</h1>
+            <form action="#">
+                <fieldset>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" id="fullname">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email">
+
+                    <button type="submit" class="submit">Subscribe</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="action-call">
+            <h2>Adventure Awaits!</h2>
+            <a href="trips.html">
+                <button>Explore Trips</button>
+            </a>
+        </section>
+
+        <section class="grid">
+            <div>
+                <img src="images/rapid_tours.jpg" alt="An image of a group of people holding oars, going down a whitewater rapid. A large volume of water is crashing over them.">
+                <a href="contact.html">Whitewater Rapid Tours</a>
+            </div>
+            <div>
+                <img src="images/river_tours.jpg" alt="A group of people in a raft going down a fairly calm river. Serene wilderness surrounds the river.">
+                <a href="contact.html">River Tours</a>
+            </div>
+            <div>
+                <img src="images/camping.jpg" alt="A tent, campfire, and hammock are set up in a serene location. The campsite overlooks a forest and a lake.">
+                <a href="contact.html">Camping Sites</a>
+            </div>
+        </section>
     </main>
+
     <footer class="foot">
         <p>&copy;2025 - WhiteWater Rafting Co. - Cameron Galloway</p>
         <nav class="socialmedia">
@@ -99,4 +81,5 @@
         </nav>
     </footer>
 </body>
+
 </html>

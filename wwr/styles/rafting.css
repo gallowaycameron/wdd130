@@ -24,19 +24,19 @@ header, main, footer {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 2fr 4fr;
+  display: flex;
   align-items: center;
+  width: 2000px;
+  background-color: var(--accent1-color);
 }
 
 .links {
   display: flex;
   list-style: none;
-  justify-content: center;
 }
 
 .links a {
-  color: var(--primary-color);
+  color: var(--accent3-color);
   text-decoration: none;
   padding: 1em;
   font-size: large;
