@@ -18,28 +18,28 @@ body {
     font-family: var(--body-font);
 }
 
-header, main, footer {
+header, footer {
     width: 1000px;
     margin: 0 auto;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  width: 2000px;
-  background-color: var(--accent1-color);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--accent1-color);
 }
 
 .links {
-  display: flex;
-  list-style: none;
+    display: flex;
+    list-style: none;
 }
 
 .links a {
-  color: var(--accent3-color);
-  text-decoration: none;
-  padding: 1em;
-  font-size: large;
+    color: var(--accent3-color);
+    text-decoration: none;
+    padding: 1em;
+    font-size: large;
 }
 
 h1 {
@@ -110,7 +110,6 @@ figcaption {
     color: var(--accent1-color);
 }
 
-
 .help {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -143,40 +142,65 @@ figcaption {
 }
 
 .hero {
-  position: relative;
+    position: relative;
 }
 
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  text-align: center;
-  background-color: var(--accent1-color);
-  opacity: 0.8;
-  color: var(--secondary-color);
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+    color: var(--secondary-color);
+}
+
+.hero h2 {
+    position: absolute;
+    top: 58px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+    color: var(--secondary-color);
+}
+
+.hero h3 {
+    color: var(--accent3-color);
+    font-size: larger;
 }
 
 .hero article{
-  position: absolute;
-  width: 100%;
-  top: 60px;
-  background-color: var(--accent2-color);
-  margin-left: auto;
-  opacity: 0.8;
-  color: var(--primary-color);
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    background-color: var(--accent2-color);
+    margin-left: auto;
+    opacity: 0.8;
+    color: var(--primary-color);
 }
 
 .hero article img{
-  float: right;
-  width: 150px;
-  margin-left: 10px;
-  text-align: left;
+    float: right;
+    width: 150px;
+    margin-left: 10px;
+    text-align: left;
 }
 
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-newsletter {
+    position: absolute;
+    bottom: 30px;
+    right: 35%;
+    background-color: var(--accent1-color);
+    padding: 20px;
+    text-align: center;
+    opacity: 0.95;
 }
 
 .socialmedia a {
@@ -189,14 +213,14 @@ figcaption {
     height: auto;
 }
 footer {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  color: var(--accent3-color);
-  background-color: var(--accent1-color);
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--accent3-color);
+    background-color: var(--accent1-color);
 }
 
 .helmets {
@@ -297,6 +321,7 @@ input[type="text"], input[type="email"], textarea {
 
 form button {
     padding: 12px 20px;
+    margin: 10px;
     background-color: var(--accent2-color);
     border: none;
     color: var(--primary-color)
@@ -305,4 +330,78 @@ form button {
 form button:hover {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
+}
+
+.action-call {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent3-color);
+    background-color: var(--accent1-color);
+}
+
+.action-call h2{
+    text-align: center;
+    padding: 5px; 
+}
+
+.action-call a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.action-call button:hover {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+
+.action-call button {
+    padding: 5px 50px;
+    font-size: large;
+    background-color: var(--accent2-color);
+    color: var(--primary-color)   
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    align-items: center;
+}
+
+.grid a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.grid button {
+    border: none;
+    padding: 5px 50px;
+    font-size: medium;
+    background-color: var(--accent2-color);
+    color: var(--primary-color)
+}
+
+.grid button:hover {
+    border: none;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.newsletter h1 {
+    font-size: x-large;
+    color: var(--accent3-color);
+    background-color: var(--accent1-color);
+    padding: 10px 20px;
+    font-family: var(--body-font);
 }
