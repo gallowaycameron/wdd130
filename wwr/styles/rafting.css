@@ -334,19 +334,6 @@ input[type="text"], input[type="email"], textarea {
     font-size: 14px;
 }
 
-form button {
-    padding: 12px 20px;
-    margin: 10px;
-    background-color: var(--accent2-color);
-    border: none;
-    color: var(--primary-color)
-}
-
-form button:hover {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
 .action-call {
     display: grid;
     justify-items: center;
@@ -370,18 +357,6 @@ form button:hover {
     padding: 10px;
 }
 
-.action-call button:hover {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
-.action-call button {
-    padding: 5px 50px;
-    font-size: large;
-    background-color: var(--accent2-color);
-    color: var(--primary-color)   
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -394,20 +369,6 @@ form button:hover {
     text-decoration: none;
     justify-content: center;
     padding: 0.5rem;
-}
-
-.grid button {
-    border: none;
-    padding: 5px 50px;
-    font-size: medium;
-    background-color: var(--accent2-color);
-    color: var(--primary-color)
-}
-
-.grid button:hover {
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
 }
 
 .newsletter {
@@ -529,4 +490,22 @@ td {
 .logo {
     border: 5px solid var(--accent1-color);
     background-color: var(--secondary-color);
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
