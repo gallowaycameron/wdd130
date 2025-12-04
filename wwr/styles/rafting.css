@@ -173,14 +173,8 @@ figcaption {
     color: var(--secondary-color);
 }
 
-.hero h2 {
-    position: absolute;
-    top: 58px;
-    width: 100%;
+.our-mission {
     text-align: center;
-    background-color: var(--accent1-color);
-    opacity: 0.8;
-    color: var(--secondary-color);
 }
 
 .hero h3 {
@@ -196,6 +190,7 @@ figcaption {
     margin-left: auto;
     opacity: 0.9;
     color: var(--accent1-color);
+    padding-bottom: 35px;
 }
 
 .hero article img{
