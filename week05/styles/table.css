@@ -1,4 +1,4 @@
-/* table{
+table{
     border: 1px solid #808080;
     border-spacing: 0;
     height: 200px;
@@ -20,11 +20,11 @@ thead th, tfoot tr{
 }
 .color{
     background-color: rgba(101, 99, 99, 0.5);
-} */
+}
 
 /* Teacher's Example */
 
-table{
+/* table{
     border-collapse: collapse;
     border: 2px solid rgb(140, 140, 140);
     letter-spacing: 1px;
@@ -39,4 +39,4 @@ thead tr, tfoot tr{
     background-color: #000;
     color: white;
     font-weight: 700;
-}
+} */

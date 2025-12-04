@@ -3,9 +3,10 @@
     --secondary-color: #fff;
     --accent1-color: #0d3b66;
     --accent2-color: #ff6b35;
-    --accent3-color: #F2C499;
-    --heading-font: 'Bebas Neue', 'Impact', 'Arial Black', Arial, sands-serif;
-    --body-font: 'Montserrat','Helvetica Neue', Helvetica, Arial, sands-serif;
+    --accent3-color: #E0B583;
+    --accent4-color: #cda577;
+    --heading-font: 'Bebas Neue', 'Impact', 'Arial Black', Arial, sans-serif;
+    --body-font: 'Montserrat','Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -36,7 +37,7 @@ header {
 }
 
 .links a {
-    color: var(--accent3-color);
+    color: var(--accent4-color);
     text-decoration: none;
     padding: 1em;
     font-size: large;
@@ -84,6 +85,7 @@ figcaption {
     padding: .5rem;
     grid-column: 1/-1;
     justify-self: center;
+    margin: 10px;
 }
 
 .fig {
@@ -96,6 +98,11 @@ figcaption {
 
 .fig figure {
     width: 150px;
+    text-align: center;
+}
+
+.fig article {
+    width: 12em;
     text-align: center;
 }
 
@@ -124,7 +131,7 @@ figcaption {
     width: 100%;
     padding: .5rem;
     grid-column: 1/-1;
-    justify-self: center;
+    text-align: center;
 }
 
 .help figure {
@@ -166,21 +173,21 @@ figcaption {
 }
 
 .hero h3 {
-    color: var(--accent3-color);
+    color: var(--accent4-color);
     font-size: larger;
 }
 
-.hero article{
+.hero article {
     position: absolute;
     width: 100%;
     top: 60px;
-    background-color: var(--accent2-color);
+    background-color: var(--accent3-color);
     margin-left: auto;
-    opacity: 0.8;
+    opacity: 0.9;
     color: var(--primary-color);
 }
 
-.hero article img{
+.hero article img {
     float: right;
     width: 150px;
     margin-left: 10px;
@@ -196,7 +203,7 @@ figcaption {
 .hero-newsletter {
     position: absolute;
     bottom: 30px;
-    right: 35%;
+    left: 33%;
     background-color: var(--accent1-color);
     padding: 20px;
     text-align: center;
@@ -208,10 +215,11 @@ figcaption {
     margin: 2px;
 }
 
-.socialmedia img{
+.socialmedia img {
     width: 30px;
     height: auto;
 }
+
 footer {
     display: flex;
     list-style: none;
@@ -219,7 +227,7 @@ footer {
     align-items: center;
     width: 100%;
     height: 100%;
-    color: var(--accent3-color);
+    color: var(--accent4-color);
     background-color: var(--accent1-color);
 }
 
@@ -231,6 +239,8 @@ footer {
     text-align: left;
     max-width: 900px;
     margin: 0 auto;
+    background-color: var(--accent3-color);
+    color: var(--accent1-color);
 }
 
 .helmets img {
@@ -242,18 +252,24 @@ footer {
 .address {
     margin-bottom: 30px;
     text-align: center;
+    background-color: var(--accent3-color);
 }
 
 .address h1 {
     font-size: 28px;
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 .address p {
     font-size: 16px;
-    color: var(--primary-color);
+    color: var(--accent1-color);
     margin: 2px 0;
+}
+
+.address-container {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .map iframe {
@@ -293,7 +309,7 @@ label {
     display: block;
     font-size: 16px;
     margin-bottom: 8px;
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -324,7 +340,7 @@ form button {
     margin: 10px;
     background-color: var(--accent2-color);
     border: none;
-    color: var(--primary-color)
+    color: var(--secondary-color);
 }
 
 form button:hover {
@@ -334,13 +350,17 @@ form button:hover {
 
 .action-call {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    color: var(--accent3-color);
+    text-align: center;
+    color: var(--accent4-color);
     background-color: var(--accent1-color);
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-.action-call h2{
+.action-call h2 {
     text-align: center;
     padding: 5px; 
 }
@@ -360,7 +380,7 @@ form button:hover {
     padding: 5px 50px;
     font-size: large;
     background-color: var(--accent2-color);
-    color: var(--primary-color)   
+    color: var(--secondary-color);
 }
 
 .grid {
@@ -382,7 +402,7 @@ form button:hover {
     padding: 5px 50px;
     font-size: medium;
     background-color: var(--accent2-color);
-    color: var(--primary-color)
+    color: var(--secondary-color);
 }
 
 .grid button:hover {
@@ -400,8 +420,113 @@ form button:hover {
 
 .newsletter h1 {
     font-size: x-large;
-    color: var(--accent3-color);
+    color: var(--accent4-color);
     background-color: var(--accent1-color);
     padding: 10px 20px;
     font-family: var(--body-font);
+}
+
+.trip {
+    text-align: center;
+    padding: 1rem;
+}
+
+.trips h2 {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    width: 100%;
+    padding: .5rem;
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+.div-trips {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.div-trips figure {
+    max-width: 150px;
+    text-align: center;
+}
+
+.div-trips article {
+    width: auto;
+    text-align: center;
+}
+
+.div-trips img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.div-trips p {
+    margin-top: 0.5rem;
+    color: var(--accent1-color);
+    text-align: left;
+}
+
+.trip-table h2 {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    width: 100%;
+    padding: 0.5rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 2px solid var(--primary-color);
+    border-spacing: 0;
+    color: var(--accent1-color);
+}
+
+th {
+    background-color: var(--accent1-color);
+    color: var(--accent4-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+td {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.color {
+    background-color: var(--accent3-color);
+}
+
+.trip-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent3-color);
+    padding: 40px 0;
+}
+
+.trip-title-img {
+    width: 600px;
+    height: auto;
+}
+
+.trip-title-text {
+    background-color: var(--accent1-color);
+    padding: 30px 40px;
+    max-width: 350px;
+    color: var(--accent4-color);
+}
+
+.logo {
+    border: 5px solid var(--accent1-color);
+    background-color: var(--secondary-color);
 }
