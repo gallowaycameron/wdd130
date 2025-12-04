@@ -87,6 +87,18 @@ figcaption {
     margin: 10px;
 }
 
+.grid h2 {
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    width: 100%;
+    padding: .5rem;
+    grid-column: 1/-1;
+    justify-self: center;
+    margin: 10px;
+}
+
 .fig {
     display: flex;
     justify-content: space-around;
