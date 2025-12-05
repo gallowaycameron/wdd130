@@ -315,17 +315,17 @@ footer {
     width: 100%;
     max-width: 600px;
     height: 350px;
-    border: none;
+    border: 1px solid var(--primary-color);
     margin-top: 20px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 60px;
 }
 
 .contact {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin: 10px;
 }
 
 fieldset {
