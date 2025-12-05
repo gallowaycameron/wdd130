@@ -45,6 +45,7 @@ header {
 h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    font-weight: normal;
 }
 
 nav, p, section, article {
@@ -73,6 +74,7 @@ figcaption {
     padding: .5rem;
     grid-column: 1/-1;
     justify-self: center;
+    font-weight: normal;
 }
 
 .history h2 {
@@ -85,6 +87,20 @@ figcaption {
     grid-column: 1/-1;
     justify-self: center;
     margin: 10px;
+    font-weight: normal;
+}
+
+.trip-title h2 {
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    width: 100%;
+    padding: .5rem;
+    grid-column: 1/-1;
+    justify-self: center;
+    margin: 10px;
+    font-weight: normal;
 }
 
 .grid h2 {
@@ -97,6 +113,7 @@ figcaption {
     grid-column: 1/-1;
     justify-self: center;
     margin: 10px;
+    font-weight: normal;
 }
 
 .fig {
@@ -143,6 +160,7 @@ figcaption {
     padding: .5rem;
     grid-column: 1/-1;
     text-align: center;
+    font-weight: normal;
 }
 
 .help figure {
@@ -171,6 +189,19 @@ figcaption {
     background-color: var(--accent1-color);
     opacity: 0.8;
     color: var(--secondary-color);
+    font-weight: normal;
+}
+
+.hero-h2 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+    color: var(--secondary-color);
+    margin-top: 38px;
+    font-weight: normal;
 }
 
 .our-mission {
@@ -180,6 +211,7 @@ figcaption {
 .hero h3 {
     color: var(--accent3-color);
     font-size: larger;
+    font-weight: normal;
 }
 
 .hero article {
@@ -265,6 +297,7 @@ footer {
     font-size: 28px;
     margin-bottom: 10px;
     color: var(--accent1-color);
+    font-weight: normal;
 }
 
 .address p {
@@ -355,7 +388,8 @@ input[type="text"], input[type="email"], textarea {
 
 .action-call h2{
     text-align: center;
-    padding: 5px; 
+    padding: 5px;
+    font-weight: normal; 
 }
 
 .action-call a {
@@ -391,6 +425,7 @@ input[type="text"], input[type="email"], textarea {
     background-color: var(--accent1-color);
     padding: 10px 20px;
     font-family: var(--body-font);
+    font-weight: normal;
 }
 
 .trip {
@@ -406,6 +441,20 @@ input[type="text"], input[type="email"], textarea {
     padding: .5rem;
     grid-column: 1/-1;
     justify-self: center;
+    text-align: center;
+    font-weight: normal;
+}
+
+.trips h3 {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    width: 100%;
+    padding: .5rem;
+    grid-column: 1/-1;
+    justify-self: center;
+    text-align: center;
+    font-weight: normal;
 }
 
 .div-trips {
@@ -445,6 +494,7 @@ input[type="text"], input[type="email"], textarea {
     padding: 0.5rem;
     margin: 10px 0;
     text-align: center;
+    font-weight: normal;
 }
 
 table {
@@ -515,4 +565,40 @@ td {
 .btn:hover {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+}
+
+.feature-trips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--accent3-color);
+}
+
+.feature-trips h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.feature-trips .trip-title-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.feature-trips .trip-title-text {
+    color: var(--accent3-color);
+}
+
+.feature-trips .trip-title-img {
+    text-align: center;
 }
